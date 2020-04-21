@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sdk</string>
+    <string name="aac_encode">AAC编码</string>
+    <string name="aac_decode">AAC解码</string>
+</resources>
