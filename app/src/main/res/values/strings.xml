@@ -10,13 +10,14 @@
     <string name="btn_aac_ffmepg_encoder_task">如何使用libfdk_aac软件编码AAC（上）</string>
     <string name="btn_libfdk_aac_encoder_task">如何使用libfdk_aac软件编码AAC（下）</string>
 
+    <string name="btn_recorder_task">串联音视频录制流程</string>
+    <string name="btn_player_task">串联音视频播放流程</string>
+
     <string name="btn_task4">解析和封装mp4</string>
     <string name="btn_task5">OpenGL绘制三角形</string>
     <string name="btn_task6">OpenGL 显示一张图片</string>
     <string name="btn_task7">AAC 硬编、硬解</string>
     <string name="btn_task8">H.264 的硬编、硬解</string>
-    <string name="btn_task9">串联音视频录制流程</string>
-    <string name="btn_task10">串联音视频播放流程</string>
     <string name="btn_task11">OpenGL 高级特性</string>
     <string name="btn_task12">GLSurfaceview预览Camera</string>
     <string name="btn_task13">网络传输协议</string>

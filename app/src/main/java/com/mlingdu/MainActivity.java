@@ -76,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_aac_hw_encoder_task).setOnClickListener(this);
         findViewById(R.id.btn_aac_ffmepg_encoder_task).setOnClickListener(this);
         findViewById(R.id.btn_libfdk_aac_encoder_task).setOnClickListener(this);
+
+        findViewById(R.id.btn_recorder_task).setOnClickListener(this);
+        findViewById(R.id.btn_player_task).setOnClickListener(this);
+
         findViewById(R.id.btn_task12).setOnClickListener(this);
         findViewById(R.id.btn_task17).setOnClickListener(this);
         findViewById(R.id.btn_task18).setOnClickListener(this);
@@ -117,6 +121,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             }
+            case R.id.btn_recorder_task: {
+                intent = new Intent(this, FdkAACActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.btn_player_task: {
+                intent = new Intent(this, FdkAACActivity.class);
+                startActivity(intent);
+                break;
+            }
+
             case R.id.btn_task12: {
                 intent = new Intent(this, PreviewCameraActivity.class);
                 startActivity(intent);
