@@ -16,8 +16,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.PermissionChecker;
 
-import com.cgfay.uitls.fragment.PermissionConfirmDialogFragment;
-import com.cgfay.utilslibrary.R;
+import com.mlingdu.sdk.R;
 
 /**
  * Created by cain on 17-7-22.
@@ -131,88 +130,8 @@ public final class PermissionUtils {
      * @param fragment
      */
     public static void requestCameraPermission(@NonNull Fragment fragment) {
-        if (fragment.shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)) {
-            PermissionConfirmDialogFragment.newInstance(fragment.getString(R.string.request_camera_permission),
-                    PermissionUtils.REQUEST_CAMERA_PERMISSION, true)
-                    .show(fragment.getChildFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            fragment.requestPermissions(new String[]{ Manifest.permission.CAMERA},
-                    com.cgfay.uitls.utils.PermissionUtils.REQUEST_CAMERA_PERMISSION);
-        }
-    }
-
-    /**
-     * 请求相机权限
-     * @param activity
-     */
-    public static void requestCameraPermission(@NonNull FragmentActivity activity) {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(activity, Manifest.permission.CAMERA)) {
-            PermissionConfirmDialogFragment.newInstance(activity.getString(R.string.request_camera_permission),
-                    PermissionUtils.REQUEST_CAMERA_PERMISSION, true)
-                    .show(activity.getSupportFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            ActivityCompat.requestPermissions(activity, new String[]{ Manifest.permission.CAMERA},
-                    com.cgfay.uitls.utils.PermissionUtils.REQUEST_CAMERA_PERMISSION);
-        }
-    }
-
-    /**
-     * 请求存储权限
-     */
-    public static void requestStoragePermission(@NonNull Fragment fragment) {
-        if (fragment.shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)) {
-            PermissionConfirmDialogFragment.newInstance(fragment.getString(R.string.request_storage_permission), PermissionUtils.REQUEST_STORAGE_PERMISSION)
-                    .show(fragment.getChildFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            fragment.requestPermissions(new String[]{ Manifest.permission.READ_EXTERNAL_STORAGE},
-                    PermissionUtils.REQUEST_STORAGE_PERMISSION);
-        }
-    }
-
-    /**
-     * 请求存储权限
-     * @param activity
-     */
-    public static void requestStoragePermission(@NonNull FragmentActivity activity) {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(activity, Manifest.permission.READ_EXTERNAL_STORAGE)) {
-            PermissionConfirmDialogFragment.newInstance(activity.getString(R.string.request_storage_permission), PermissionUtils.REQUEST_STORAGE_PERMISSION)
-                    .show(activity.getSupportFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            ActivityCompat.requestPermissions(activity,
-                    new String[]{ Manifest.permission.READ_EXTERNAL_STORAGE},
-                    PermissionUtils.REQUEST_STORAGE_PERMISSION);
-        }
-    }
-
-    /**
-     * 请求录音权限
-     */
-    public static void requestRecordSoundPermission(@NonNull Fragment fragment) {
-        if (fragment.shouldShowRequestPermissionRationale(Manifest.permission.RECORD_AUDIO)) {
-            PermissionConfirmDialogFragment.newInstance(fragment.getString(R.string.request_sound_permission), PermissionUtils.REQUEST_SOUND_PERMISSION)
-                    .show(fragment.getChildFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            fragment.requestPermissions(new String[]{ Manifest.permission.RECORD_AUDIO},
-                    PermissionUtils.REQUEST_SOUND_PERMISSION);
-        }
-    }
-
-    /**
-     * 请求录音权限
-     */
-    public static void requestRecordSoundPermission(FragmentActivity activity) {
-        if (activity == null) {
-            return;
-        }
-        if (ActivityCompat.shouldShowRequestPermissionRationale(activity, Manifest.permission.RECORD_AUDIO)) {
-            PermissionConfirmDialogFragment.newInstance(activity.getString(R.string.request_sound_permission),
-                    PermissionUtils.REQUEST_SOUND_PERMISSION)
-                    .show(activity.getSupportFragmentManager(), FRAGMENT_DIALOG);
-        } else {
-            ActivityCompat.requestPermissions(activity,
-                    new String[]{ Manifest.permission.RECORD_AUDIO},
-                    PermissionUtils.REQUEST_SOUND_PERMISSION);
-        }
+        fragment.requestPermissions(new String[]{ Manifest.permission.CAMERA},
+                PermissionUtils.REQUEST_CAMERA_PERMISSION);
     }
 
     /**

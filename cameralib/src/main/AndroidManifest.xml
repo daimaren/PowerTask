@@ -1,8 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mlingdu.cameralib">
-
-    <application>
-        <activity android:name=".activity.CameraActivity"/>
-        <activity android:name=".activity.CameraDemoActivity"/>
-    </application>
-</manifest>

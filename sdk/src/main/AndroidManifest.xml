@@ -3,6 +3,6 @@
     package="com.mlingdu.sdk">
     <application>
         <activity android:name=".activity.FdkAACActivity"/>
-        <activity android:name=".activity.AudioHwEncoderActivity"/>
+        <activity android:name=".activity.CameraDemoActivity"/>
     </application>
 </manifest>

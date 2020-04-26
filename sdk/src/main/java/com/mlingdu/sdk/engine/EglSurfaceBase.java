@@ -21,7 +21,7 @@ import android.opengl.EGLSurface;
 import android.opengl.GLES30;
 import android.util.Log;
 
-import com.cgfay.filter.glfilter.utils.OpenGLUtils;
+import com.mlingdu.sdk.utils.OpenGLUtils;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

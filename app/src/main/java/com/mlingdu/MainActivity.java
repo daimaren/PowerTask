@@ -7,13 +7,11 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.mlingdu.cameralib.activity.CameraActivity;
-import com.mlingdu.cameralib.activity.CameraDemoActivity;
 import com.mlingdu.demo.task01.ImageActivity;
 import com.mlingdu.demo.task12.PreviewCameraActivity;
 import com.mlingdu.demo.R;
 import com.mlingdu.demo.utils.PermissionUtils;
-import com.mlingdu.sdk.activity.AudioHwEncoderActivity;
+import com.mlingdu.sdk.activity.CameraDemoActivity;
 import com.mlingdu.sdk.activity.FdkAACActivity;
 
 /**
@@ -109,8 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.btn_aac_hw_encoder_task: {
-                intent = new Intent(this, AudioHwEncoderActivity.class);
-                startActivity(intent);
+
                 break;
             }
             case R.id.btn_aac_ffmepg_encoder_task: {
@@ -138,8 +135,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.btn_task17:
-                intent = new Intent(this, CameraActivity.class);
-                startActivity(intent);
                 break;
             case R.id.btn_task18:
                 intent = new Intent(this, CameraDemoActivity.class);
